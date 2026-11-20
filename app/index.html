@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff5c8a'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Georgia'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide &amp; tracker</p>
+    <h1>Leonida Legend</h1>
+    <p class="sub">Every one of the 55 trophies — official names, descriptions and grades, a guide in our own words with its sources, a roadmap to the platinum, and a checklist that remembers your progress.</p>
+    <div class="progress-wrap" role="status" aria-label="Trophies earned">
+      <div class="progress-bar"><div id="progressFill" class="progress-fill" style="width:0%"></div></div>
+      <p class="progress-text"><strong id="progressCount">0 / 55</strong> earned · <span id="progressGrades">0 platinum · 0 gold · 0 silver · 0 bronze</span></p>
+    </div>
+    <p class="facts">55 trophies: 1 platinum · 2 gold · 6 silver · 46 bronze · 27 visible, 28 hidden · 0 online · about 200 hours to the platinum (PowerPyx, 4/10)</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <button type="button" class="tab active" data-view="checklist" aria-current="page">Checklist</button>
+  <button type="button" class="tab" data-view="roadmap">Roadmap to Platinum</button>
+  <button type="button" class="tab" data-view="missables">Missables</button>
+  <button type="button" class="tab" data-view="sources">Sources &amp; notes</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view active" aria-label="Trophy checklist">
+    <div class="toolbar">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy name or description…" autocomplete="off"></label>
+      <label class="grade">Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+      <label class="toggle"><input id="spoilerToggle" type="checkbox" checked> Spoiler-safe <span class="hint">hide story trophies until earned</span></label>
+      <label class="toggle"><input id="hideEarnedToggle" type="checkbox"> Hide earned</label>
+      <div class="io">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+        <button id="resetBtn" type="button" class="danger">Reset</button>
+      </div>
+    </div>
+    <p id="resultCount" class="result-count" role="status"></p>
+    <div id="cards" class="cards"></div>
+    <p id="emptyState" class="empty" hidden>No trophies match these filters. Try clearing the search or picking another kind.</p>
+  </section>
+
+  <section id="view-roadmap" class="view" aria-label="Roadmap to the platinum">
+    <p class="lede">One playthrough, four stages. The order below is built from the official descriptions: story first, then the activities and stranger strands, then collectibles and money, then the 100% checklist. Times are PowerPyx's estimates.</p>
+    <div id="roadmapStages" class="stages"></div>
+  </section>
+
+  <section id="view-missables" class="view" aria-label="Missable trophies">
+    <p class="lede">Only one trophy is reported as possibly missable. Everything else can be finished in free-roam after the story — but there is no mission replay, so do the story-locked things on the way through.</p>
+    <div id="missableList" class="missables"></div>
+    <h2>Watch out for these too</h2>
+    <ul class="cautions">
+      <li><strong>Stranger chains may have windows.</strong> TechWiser warns, from a single source, that the mission strands behind the five stranger finales have windows tied to story progress. Start each strand as soon as it unlocks.</li>
+      <li><strong>Cheats disable trophies.</strong> PowerPyx and GTABase both report that using any cheat disables trophies, achievements and saving. Keep cheats off for the whole run.</li>
+      <li><strong>No mission replay.</strong> After the story there is free-roam but no way to replay a mission, so story trophies and mission-tied steps have to be done on the way through.</li>
+      <li><strong>Story trophies cannot be missed.</strong> All 12 story trophies unlock automatically when their chapter or mission ends.</li>
+    </ul>
+  </section>
+
+  <section id="view-sources" class="view" aria-label="Sources and notes">
+    <h2>Where the facts come from</h2>
+    <p>Every guide in this app is written in our own words for this entry. It draws on the sources below and names them beside each trophy, so a reader can check any fact. No guide text is copied from them. The official names, descriptions and grades are shown as PlayStation publishes them.</p>
+    <ul class="source-list">
+      <li><a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — GTA VI trophy list</a> — the official list: every name, description, grade and hidden flag, with live rarity.</li>
+      <li><a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles — GTA VI trophies</a> — the same list with PSN's progress targets (such as the 42 Shooting Range challenges).</li>
+      <li><a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a> — difficulty 4/10, about 200 hours, the roadmap stages, and the only possibly-missable trophy.</li>
+      <li><a href="https://cryptogames.gg/gta-6-trophies-achievements-full-list/">CryptoGames — GTA 6 Trophies and Achievements</a> — the full list with the hidden/visible split and the hard-trophy tips, reporting GTABase and PowerPyx.</li>
+      <li><a href="https://www.gtabase.com/">GTABase — GTA 6 guides</a> — per-trophy reads (tank and jet locations, Strength, the Criminal Profile figure) as reported in the launch-week roundups.</li>
+    </ul>
+    <h2>How honest this guide is</h2>
+    <p>The game launched on 19 November 2026, a day before this guide was written. Five trophies (In The Beginning…, Capital Offense, Bad Luck, I Guess, The Truth Is Out There and Ten Pin) have no confirmed steps in any source yet, and one (Fair Game) has no confirmed target animal. Those entries say so plainly instead of inventing a walkthrough. Where two sources disagree — the meditation count is 18 by one and 15 by another — both numbers are given.</p>
+    <p>Nothing in this app reaches for the network: it runs entirely from its own files, and your progress never leaves your browser except through the export file you choose to save.</p>
+  </section>
+</main>
+
+<aside id="detail" class="detail" aria-label="Trophy guide" hidden>
+  <button id="detailClose" type="button" class="detail-close" aria-label="Close guide">×</button>
+  <div id="detailBody"></div>
+</aside>
+<div id="scrim" class="scrim" hidden></div>
+
+<footer>
+  <p>Leonida Legend — an unofficial, open-source trophy guide and tracker for Grand Theft Auto VI on PlayStation 5. Not affiliated with Rockstar Games. No Rockstar logo, artwork or game screenshots are used. Works offline from its own files.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
